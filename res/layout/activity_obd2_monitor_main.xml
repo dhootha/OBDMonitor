@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OBD2MonitorMainActivity" >
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/limegreen"
+            android:hint="@string/connected_status"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:id="@+id/connected_status_text"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:hint="@string/response_message"
+            android:id="@+id/response_msg_text"
+            android:layout_marginTop="36dp"
+            android:background="@color/wheat"
+            android:scrollbars="vertical"
+            android:layout_alignParentLeft="true"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/supported_pids"
+            android:id="@+id/supported_pids_text"
+            android:layout_marginTop="218dp"
+            android:scrollbars="horizontal"
+            android:background="@color/wheat"
+            android:textSize="10sp"
+            android:textColor="@color/red"
+            android:gravity="center|left"/>
+
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:hint="@string/input_command"
+            android:id="@+id/input_cmd_edit"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="280dp"/>
+
+    <Spinner
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:id="@+id/spinner"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="12.5dp"
+            android:spinnerMode="dialog"/>
+
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/send_command"
+            android:id="@+id/send_cmd_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:enabled="false"/>
+
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select_device"
+            android:id="@+id/select_device_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginBottom="15dp"/>
+
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnect_device"
+            android:id="@+id/disconnect_device_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:layout_marginRight="12.5dp"
+            android:layout_marginBottom="15dp"/>
+
+
+</RelativeLayout>

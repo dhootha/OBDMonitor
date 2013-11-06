@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:text="@string/obd_protocol"
+            android:gravity="center"
+            android:id="@+id/obd2_protocol_txt"
+            android:layout_gravity="center"/>
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/obd2_protocol_listView"
+            android:layout_gravity="center"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:text="@string/obd_commands"
+            android:gravity="center"
+            android:id="@+id/obd2_protocol_txt"
+            android:layout_gravity="center"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="@string/obd_cmds_cmd"
+                android:id="@+id/obd2_cmd_cmd"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="@string/obd_cmds_detail"
+                android:id="@+id/obd2_cmd_return"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="@string/obd_cmds_unit"
+                android:id="@+id/obd2_cmd_return"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="@string/obd_cmds_return"
+                android:id="@+id/obd2_cmd_return"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="@string/obd_cmds_formula"
+                android:id="@+id/obd2_cmd_formula"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/obd2_cmd_gridView"
+            android:numColumns="5"
+            android:layout_gravity="left|center_vertical"/>
+</LinearLayout>

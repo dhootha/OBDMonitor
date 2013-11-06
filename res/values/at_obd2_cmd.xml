@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ATandOBD2Commands">
+        <item>CMD  AT和OBD命令,[h]代表[0-F]值</item>
+        <item>>->结束符</item>
+        <item>ATZ->重置所有</item>
+        <item>ATWS->热启动(QuickSoftwareRestart)</item>
+        <item>ATE0->Echo关闭[0],打开[1]</item>
+        <item>ATL0->换行关闭f[0],打开[1]</item>
+        <item>AT DP->描述当前协议</item>
+        <item>AT DPN->使用编号描述当前协议</item>
+        <item>AT SP h->使用[h:0-C]设置协议并保存</item>
+        <item>AT SP Ah->用[h:0-C]自动设置协议并保存</item>
+        <item>AT TP h->尝试协议[h:0-C]</item>
+        <item>AT TP Ah->尝试协议[h:0-C]自动检索</item>
+        <item>0100->检查PIDs是否支持[01-20]</item>
+        <item>0105->引擎冷却温度</item>
+        <item>010A->燃油压力</item>
+        <item>010B->吸入气压</item>
+        <item>010C->引擎转数</item>
+        <item>0101->故障码</item>
+        <item>03->请求故障码</item>
+        <item>04->清除故障码</item>
+        <item>== RES_TEST OBD响应数据 ==</item>
+        <item>SEARCHING...->OBD响应数据</item>
+        <item>41 00 BE 1F A8 13 >->OBD响应数据 0100</item>
+        <item>41 05 7B  >->OBD响应数据:引擎冷却温度</item>
+        <item>41 0B 1A F8  >->OBD响应数据:吸入气压</item>
+        <item>41 0C 1A  >->OBD响应数据:引擎转数</item>
+        <item>41 01 81 07 65 04  >->OBD响应数据:故障码数</item>
+        <item>43 01 33 00 00 00 00  >->OBD响应数据:请求故障码</item>
+        <item>43 00 43 00 00 00 00  >->OBD响应数据:请求故障码</item>
+        <item>NO DATA  >->OBD响应数据:No data</item>
+        <item>OK  >->OBD响应数据:No data</item>
+        <item>ELM327 1.5  >->OBD响应数据:No data</item>
+        <item>UNABLE TO CONNECT  >->OBD响应数据:ERROR</item>
+        <item>BUS BUSY  >->OBD响应数据:ERROR</item>
+        <item>DATA ERROR  >->OBD响应数据:ERROR</item>
+        <item>BUS ERROR  >->OBD响应数据:ERROR</item>
+        <item>CAN ERROR  >->OBD响应数据:ERROR</item>
+        <item>STOPPED  >->OBD响应数据:ERROR</item>
+    </string-array>
+    <string-array name="protocols">
+        <item>0 - Automatic</item>
+        <item>1 - SAE J1850 PWM (41.6 Kbaud)</item>
+        <item>2 - SAE J1850 VPW (10.4 Kbaud)</item>
+        <item>3 - ISO 9141-2 (5 baud init, 10.4 Kbaud)</item>
+        <item>4 - ISO 14230-4 KWP (5 baud init, 10.4 Kbaud)</item>
+        <item>5 - ISO 14230-4 KWP (fast init, 10.4 Kbaud)</item>
+        <item>6 - ISO 15765-4 CAN (11 bit ID, 500 Kbaud)</item>
+        <item>7 - ISO 15765-4 CAN (29 bit ID, 500 Kbaud)</item>
+        <item>8 - ISO 15765-4 CAN (11 bit ID, 250 Kbaud)</item>
+        <item>9 - ISO 15765-4 CAN (29 bit ID, 250 Kbaud)</item>
+        <item>A - SAE J1939 CAN (29 bit ID, 250* Kbaud)</item>
+        <item>B - USER1 CAN (11* bit ID, 125* Kbaud)</item>
+        <item>C - USER2 CAN (11* bit ID, 50* Kbaud)</item>
+    </string-array>
+    <string-array name="OBD2_Commands">
+        <item>0100</item>
+        <item>是否支持PID</item>
+        <item>-</item>
+        <item>4bytes</item>
+        <item>00-20</item>
+        <item>0105</item>
+        <item>水温</item>
+        <item>°C</item>
+        <item>1byte</item>
+        <item>A-40</item>
+        <item>010A</item>
+        <item>燃油压力</item>
+        <item>kPa</item>
+        <item>1byte</item>
+        <item>A*3</item>
+        <item>010B</item>
+        <item>吸入气压</item>
+        <item>kPa</item>
+        <item>1byte</item>
+        <item>A</item>
+        <item>010C</item>
+        <item>转数</item>
+        <item>RPM</item>
+        <item>2bytes</item>
+        <item>((A*256)+B)/4</item>
+        <item>0101</item>
+        <item>故障码数</item>
+        <item>-</item>
+        <item>4byte</item>
+        <item>-</item>
+        <item>03</item>
+        <item>故障码</item>
+        <item>-</item>
+        <item>n*6bytes</item>
+        <item>-</item>
+        <item>04</item>
+        <item>清除故障码</item>
+        <item>-</item>
+        <item>0byte</item>
+        <item>-</item>
+    </string-array>
+</resources>

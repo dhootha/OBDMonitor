@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OBD2Monitor</string>
+    <string name="sel_devices">蓝牙设备选择</string>
+    <string name="help_title">帮助</string>
+    <string name="connected_status">连接状态</string>
+    <string name="response_message">反馈信息</string>
+    <string name="supported_pids">支持PIDs[00-20],[0-不支持][1-支持]</string>
+    <string name="input_command">输入AT或OBD2命令</string>
+    <string name="send_command">发送</string>
+    <string name="select_device">选择设备</string>
+    <string name="disconnect_device">断开设备</string>
+    <string name="title_paired_devices">配对设备</string>
+    <string name="title_other_devices">新设备</string>
+    <string name="scan_device_btn">扫描新设备</string>
+    <string name="stop_scan_btn">停止扫描</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_quit">退出</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_res_ok">回复OK</string>
+    <string name="menu_res_normal">回复Normal</string>
+    <string name="menu_res_error">回复Error</string>
+    <string name="bt_not_available">蓝牙设备不可用</string>
+    <string name="please_input_cmd">请输入有效命令</string>
+    <string name="device_connecting">蓝牙设备连接中...</string>
+    <string name="no_device_found">未找到蓝牙设备</string>
+    <string name="device_scanning">扫描设备</string>
+    <string name="none_paired">未配对</string>
+    <string name="obd_protocol">OBDII通讯协议</string>
+    <string name="obd_commands">OBDII命令</string>
+    <string name="obd_cmds_cmd">命令</string>
+    <string name="obd_cmds_detail">说明</string>
+    <string name="obd_cmds_unit">单位</string>
+    <string name="obd_cmds_return">返回字节</string>
+    <string name="obd_cmds_formula">公式</string>
+
+</resources>
